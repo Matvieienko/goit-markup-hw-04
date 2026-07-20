@@ -7,6 +7,21 @@
   width: calc((100% - 72px) / 4);
 }
 
+.features-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+  border: 1px solid var(--icon-border-color);
+  border-radius: 4px;
+  background-color: var(--light-background);
+}
+
+.features-icon {
+  display: block;
+}
+
 .features-title {
   margin-bottom: 8px;
   color: var(--primary-text-color);

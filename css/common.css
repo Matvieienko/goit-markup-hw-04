@@ -5,6 +5,10 @@
   --active-color: #404bbf;
   --light-background: #f4f4fd;
   --white-color: #ffffff;
+  --border-color: #e7e9fc;
+  --icon-border-color: #8e8f99;
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,

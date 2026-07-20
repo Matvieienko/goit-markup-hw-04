@@ -15,6 +15,10 @@
   width: calc((100% - 72px) / 4);
   background-color: var(--white-color);
   border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 1px 6px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-content {
@@ -34,4 +38,32 @@
 .team-role {
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
+
+.social-icon {
+  display: block;
 }

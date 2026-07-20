@@ -1,5 +1,5 @@
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-container {
@@ -17,12 +17,14 @@
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 24px 0;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .contacts {
@@ -41,6 +43,22 @@
   color: var(--secondary-text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color var(--transition-duration) var(--transition-timing);
+}
+
+.nav-link.current {
+  color: var(--active-color);
+}
+
+.nav-link.current::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--active-color);
+  content: '';
 }
 
 .nav-link:hover,

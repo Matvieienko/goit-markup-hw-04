@@ -1,5 +1,13 @@
 .hero {
   background-color: var(--primary-text-color);
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
 }
 
@@ -23,12 +31,15 @@
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
 }
 
 .hero-button:hover,
