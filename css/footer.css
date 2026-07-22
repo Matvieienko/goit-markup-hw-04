@@ -63,4 +63,6 @@
 
 .footer-social-icon {
   display: block;
+  fill: #f4f4fd;
+  --color3: #f4f4fd;
 }
